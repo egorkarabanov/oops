@@ -29,7 +29,7 @@ int main() {
         else if (menu == 5) test.div();
         else if (menu == 6){
             cout << "\nвведіть степінь для піднесення\n";
-            int n = 0;
+            int n = 10;
             cin >> n;
             test.longPow(n);
         }
