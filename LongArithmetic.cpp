@@ -221,8 +221,9 @@ namespace std {
     }
 
     void la::setValues(void) {
+        SetConsoleOutputCP(CP_UTF8);
         string buffer;
-        cout << "Input number A:";
+        cout << "Введіть число A:";
         cin >> buffer;
         if (buffer[0] == '-') {
             negativeA = true;
@@ -232,7 +233,7 @@ namespace std {
         reverse(buffer.begin(), buffer.end());
         valueA = stringToArray(buffer);
 
-        cout << "Input number B:";
+        cout << "Введіть число B:";
         cin >> buffer;
         if (buffer[0] == '-') {
             negativeB = true;
